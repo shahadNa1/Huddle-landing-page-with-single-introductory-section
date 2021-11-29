@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+:root {
+    --color-violet: hsl(257, 40%, 49%);
+    --color-soft-magenta: hsl(300, 69%, 71%);
+  }
+  
+  html {
+    font-size: 62.5%; 
+  }
+
+  body{
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(./images/bg-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--color-violet);
+    padding: 7rem;
+}
+
+img {
+    width: 100%;
+  }
+  
+  .header {
+    margin-bottom: 7rem;
+  }
+  
+  .logo-container {
+    width: 20rem;
+  }
+
+  .attribution {
+    display: flex;
+  }  
+
+  .image-attribution {
+    flex: 1 1 55%;
+  }
+
+  .content-container {
+    flex: 1 1 45%;
+    color: #fff;
+    padding: 5rem 0 0 5rem;
+  }
+  
+  .content-header {
+    font-size: 4rem;
+    margin-bottom: 2.3rem;
+  }
+  
+  .content-text {
+    font-size: 1.7rem;
+    margin-bottom: 1.8rem;
+    color: #d3d3d3;
+  }
+
+  .btn {
+    width: 22rem;
+    border: none;
+    padding: 1.5rem 0;
+    border-radius: 20rem;
+    font-family: inherit;
+    font-size: 1.8rem;
+    font-weight: 400;
+    box-shadow: 0 0.8rem 0.8rem rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn a {
+    text-decoration: none;
+    color: var(--color-violet);
+  }
+  
+  .btn:active {
+    transform: scale(0.98);
+  }
+  
+  .btn:hover {
+    background-color: var(--color-soft-magenta);
+    color: #fff;
+  }
+
+
+
+  @media only screen and (max-width: 78.125em) {
+    .header {
+      margin-bottom: 7rem;
+    }
+  
+    .logo-container {
+      width: 17rem;
+    }
+  
+    .content-container {
+      padding: 2rem 0 0 3rem;
+    }
+  
+    .content-header {
+      font-size: 3rem;
+    }
+  
+    .content-text {
+      font-size: 1.5rem;
+    }
+
+  
+  @media only screen and (max-width: 56.25em) {
+    body {
+      background-image: url(./images/bg-mobile.svg);
+      background-size: 100%;
+      padding: 3rem;
+    }
+  
+    .header,
+    .container,
+    .footer {
+      max-width: 50rem;
+    }
+  
+    .header {
+      margin-bottom: 6rem;
+    }
+  
+    .logo-container {
+      width: 15rem;
+    }
+  
+    .container {
+      flex-direction: column;
+      margin-bottom: 8rem;
+    }
+  
+    .content-container {
+      margin-top: 5rem;
+      text-align: center;
+      padding: 0;
+    }
+  
+    .content-header {
+      font-size: 2.5rem;
+    }
+  
+    .content-text {
+      font-size: 1.6rem;
+      margin-bottom: 3rem;
+    }
+  
+    .btn {
+      width: 23rem;
+      font-size: 1.5rem;
+      padding: 1rem 0;
+    }
+  
+}}
